@@ -1,0 +1,49 @@
+{
+  "name": "react-fortune-wheel",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "types": "./lib/main.d.ts",
+  "typings": "./lib/main.d.ts",
+  "files": [
+    "lib",
+    "README"
+  ],
+  "main": "./lib/react-fortune-wheel.umd.cjs",
+  "module": "./lib/react-fortune-wheel.js",
+  "exports": {
+    ".": {
+      "import": "./lib/react-fortune-wheel.js",
+      "require": "./lib/react-fortune-wheel.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-eslint": "^9.0.3",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.14.6",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "rollup-plugin-license": "^3.0.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-aliases": "^0.10.0",
+    "vite-plugin-dts": "^2.0.2",
+    "vite-tsconfig-paths": "^4.0.5"
+  }
+}
